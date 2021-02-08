@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+{% include head.html %}
+
+<body style="background-color: black;">
+
+<section class="hero is-dark" style="background-color: black;">
+  <div class="hero-body">
+    <div class="container">
+        <h1 class="title" style="color:  #1f7f1f;">
+          <span class="typewrite" data-period="2000" data-type='[ "Hello There", "Paul", "Spark", "Lasdoce", "is 7761746368696e67", "you", "4675636b207468697Fuck320676f7665726e6d656ethis742e2057652064656d6government16e6420696e666fWe want information726d6174696f6e2e205765206We are1726520416e6f6e796d6f75732eAnonymous4675636b207468697320676f7665726e6d656e742e2057652064"]'>
+            <span class="wrap"></span>
+          </span>
+        </h1>
+      <h4 class="subtitle" id="quote">
+      </h4>
+    </div>
+  </div>
+</section>
+
+<div class="main-container">
+  <div class="tile is-ancestor is-vertical">
+
+
+    <nav class="nav has-shadow" style="background-color: black;">
+
+      <div class="nav-center" style="background-color: black;">
+
+        <a href="{{"/" | relative_url}}" class="nav-item">
+          <span class="icon" style="color: #1f7f1f">
+            <i class="fa fa-home" aria-hidden="true" title="Homepage" style="font-size: 100px; margin-right: 200px"></i>
+          </span>
+        </a>
+        <a href="https://github.com/spark3301" class="nav-item">
+          <span class="icon" style="color: #1f7f1f">
+            <i class="fa fa-github" aria-hidden="true" title="Github" style="font-size: 100px"></i>
+          </span>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100010809706781" class="nav-item">
+          <span class="icon" style="color: #1f7f1f">
+            <i class="fa fa-facebook" aria-hidden="true" title="Facebook" style="font-size: 100px; margin-left: 200px;"></i>
+          </span>
+        </a>
+
+      </div>
+
+      <span class="nav-toggle" id="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+    </nav>
+
+    <div class="tile is-parent">
+      <div class="tile is-8 is-child main">
+
+        {{ content }}
+
+      </div>
+
+      <div class="tile is-4 is-child">
+        <div class="tile is-parent is-vertical sidebar">
+
+          <div class="tile is-child widget">
+
+            <div class="card" style="background-color: black;">
+              <header class="card-header">
+                <p class="card-header-title nice-title" style=" color: #1f7f1f"">
+                  Recent Posts
+                </p>
+              </header>
+              <div class="card-content">
+                <div class="content nice-text">
+                  <ul>
+                  {% for post in site.posts limit:3 %}
+                  <li><a href="{{ post.url | relative_url }}">
+                    {{ post.title }}
+                  </a></li>
+                  {% endfor %}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tile is-child widget">
+
+            <div class="card" style="background-color: black;">
+              <header class="card-header">
+                <p class="card-header-title nice-title" style="color: #1f7f1f;">
+                  Sponsored
+                </p>
+              </header>
+              <div class="card-content">
+                <div class="content nice-text">
+                  <img src="{{ site.baseurl }}/assets/images/anonymous.png" style="background-color: black;"/>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="tile is-child widget">
+            <div class="card" style="background-color: black;">
+              <header class="card-header">
+                <p class="card-header-title nice-title">
+                  Social Media Links
+                </p>
+              </header>
+              <div class="card-content">
+                <div class="content nice-text">
+                  <ul>
+                    <li>
+                      <a href="https://www.facebook.com/profile.php?id=100010809706781">Facebook</a>
+                    </li>
+                    <li>
+                      <a href="http://commitstrip.com">Commit Strip</a>
+                    </li>
+                    <li>
+                      <a href="http://www.smbc-comics.com">SMBC Comics</a>
+                    </li>
+                    <li>
+                      <a href="https://blog.codinghorror.com">Coding Horror</a>
+                    </li>
+                    <li>
+                      <a href="http://waitbutwhy.com">Wait Buy Why</a>
+                    </li>
+                    <li>
+                      <a href="https://simplysoch.wordpress.com/">Simply Soch</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<footer class="footer" style="background-color: black;">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        Some rights reserved.
+      </p>
+      <p style="color: #1f7f1f;">
+        Made with <a href="https://github.com/jgthms/bulma"> Bulma</a> and <a href="https://jekyllrb.com/">Jekyll</a>. Gi manage sa <a href="https://github.com/">Github</a>
+      </p>
+      <p>
+        <a class="icon" href="https://github.com/spark3301">
+          <i class="fa fa-github" title="Github" style="color: #1f7f1f; font-size: 50px;"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- js -->
+<script src="{{ site.baseurl }}/assets/js/custom.js"></script>
+<script src="{{ site.baseurl }}/assets/js/typewriter.js"></script>
+</body>
+</html>

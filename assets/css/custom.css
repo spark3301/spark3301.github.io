@@ -1,0 +1,138 @@
+/*
+    Import League Gothic <3
+*/
+/* @font-face {
+    font-family: 'League Gothic';
+    src: url('leaguegothic-regular-webfont.eot');
+    src: url('leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('leaguegothic-regular-webfont.woff') format('woff'),
+    url('leaguegothic-regular-webfont.ttf') format('truetype'),
+    url('leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} */
+body {
+    color: #1f7f1f;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    /* text-shadow: 0 0 0.01em $shadow-color; */
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.container {
+    text-align: center;
+}
+
+/* for mobile screens otherwise it messes up the nav*/
+#searchFieldNav {
+    width: 65%;
+}
+
+h1.title > span {
+    font-family: "Source Code Pro","Courier New",monospace;
+    margin-bottom: 1.75rem;
+    font-size: 1.5em;
+}
+
+.subtitle {
+    font-size: 0.80em;
+    margin-top: -1.0rem;
+}
+
+.box {
+    background-color: black;
+}
+
+.post {
+    color: #1f7f1f;
+    background-color: black;
+    margin-bottom: 1em;
+}
+
+.nice-title {
+    font-size: larger;
+    font-weight: 400;
+    font-family: "Source Code Pro", "Courier New",monospace;
+}
+
+.nice-text {
+    font-family: "Source Code Pro", "Courier New",monospace;
+}
+
+.card-content {
+    padding: 0 0 1em;
+}
+
+.fa-heart:hover {
+    color: red;
+}
+
+.footer {
+    padding: 3rem 1.5rem 3rem;
+}
+
+.post-title {
+    font-size: x-large;
+    font-family: "Source Code Pro", "Courier New",monospace;
+}
+
+.post-meta {
+    font-family: "Source Code Pro", "Courier New",monospace;
+    font-size: small;
+}
+
+.post-text {
+    font-family: "Source Code Pro", "Courier New",monospace;
+}
+
+.post-text > p {
+    margin-bottom: 1em;
+    font-family: "Source Code Pro", "Courier New",monospace;
+}
+
+/* sorry God. Just once */
+.sidebar {
+    padding: 0 0.75rem 0.75rem 0.75rem !important;
+}
+
+.box {
+    padding: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: "Source Code Pro", "Courier New",monospace;
+}
+
+a {
+    color: white;
+}
+/* Hotfix for lists being misaligned */
+.tile.is-parent ol, ul {
+  padding: 2% 5%;
+}
+/* Hotfix for Bulma striping headings of styling */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+@media screen and (max-width: 1200px) {
+  .pagination {
+    flex-wrap: nowrap;
+  }
+  .pagination-list {
+    font-size: 0%;
+  }
+}
+/* ~ jpasholk */
